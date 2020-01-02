@@ -166,6 +166,14 @@ nav {
   margin-bottom: 20%;
 }
 
+.gallery-item a {
+  text-decoration: none;
+}
+
+.gallery-item a:hover {
+  text-decoration: none;
+}
+
 .gallery-item img {
   width: 100vw;
   height: 80vw;
