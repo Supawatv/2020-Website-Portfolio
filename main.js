@@ -11,16 +11,13 @@ $(document).ready(function() {
 	console.log("ready!");
 	console.log("fading")
 
-	// $('#nav_bar').fadeIn("slow");
+	// Fade in gallery
 	$('#gallery').fadeIn("slow");
 
-
-
+	// Hamburger Click
 	$('#hamburger').on('click', function() {
 		$('#overlay').fadeToggle();
 	});
-
-
 });
 
 // When burger is clicked toggle overlay and scroll
@@ -92,3 +89,16 @@ function includeHTML() {
 		}
 	}
 }
+
+// Hover States
+$(document).ready(function() {
+	// HCI explanation
+	$("#HCI").mouseenter(function() {
+		$("#HCI").text("Human-computer interaction")
+	});
+	$("#HCI").mouseleave(function() {
+		$("#HCI").text("HCI")
+	});
+
+
+});
