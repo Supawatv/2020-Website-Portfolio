@@ -8,12 +8,15 @@
 		<title>Supawat Vitoorapakorn</title>
 		
 		<!-- SCRIPTS -->
+		<!-- Type JS -->
+		<script src="lib/typed.js"></script>
+		
 		<!-- J-query -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<!-- J-query UI -->
 		<script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 		
-
+		
 		<!-- Font -->
 		<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
 		
@@ -21,8 +24,10 @@
 		<!-- Styling -->
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="hamburger_menu/hamburger.css">
-		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-
+		
+		
+		
+		
 		<!-- Javascript -->
 		<script src="main.js"></script>
 	</head>
@@ -33,7 +38,7 @@
 		<meta name='viewport'
 		content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 		
-
+		
 		<!-- Mobile Overlay -->
 		<div id="overlay">
 			<a href="">Work</a>
@@ -42,8 +47,9 @@
 			<a href="">Resume</a>
 		</div>
 
-
-
+		
+		
+		
 		<!-- Nav Bar -->
 		<nav>
 			<!-- Home Logo -->
@@ -61,7 +67,7 @@
 				<div class="bar2"></div>
 				<div class="bar3"></div>
 			</div>
-
+			
 			<!-- Desktop Nav Links -->
 			<div id="nav_links">
 				<a href=""><h5><b>Work</b></h5></a>
@@ -73,11 +79,30 @@
 		</nav>
 		
 		
-		
+
+
+
 		
 		<!-- Landing Splash -->
 		<section id="splash">
-			<h1>Hi, I'm Supawat.</h1>
+			<!-- <h1>Hi, I'm Supawat.</h1> -->
+
+			<!-- Type JS Test -->
+			<!-- library from https://github.com/mattboldt/typed.js/ -->
+			 <h1><span id="splash_type"></span></h1>
+			<script type="text/javascript" src="lib/typed.js"></script>
+			<script type="text/javascript">
+			var typed = new Typed('#splash_type', {
+			strings: [
+			"","Hi, I'm Supawat"
+			],
+			typeSpeed: 30,
+			backSpeed: 50,
+			});
+			</script>
+
+
+
 			<h1>
 			I study <a href="">Design</a> and <a href="">HCI</a> at <a href="">CMU</a>. <br>
 			I craft digital-physical expereinces to push technology into the background.
@@ -85,10 +110,14 @@
 			<br>
 			Previously at <a href="">iRobot</a>
 			</h1>
+			
+		
+			
+			
 		</section>
-
+		
 		<section id=down_arrow>
-				<img src="assets/down_arrow.svg">
+			<img src="assets/down_arrow.svg">
 		</section>
 		
 		<!-- Implement Later -->
@@ -152,7 +181,7 @@
 			
 			<h5> Designed and developed by<br>© Supawat Vitoorapakorn</h5>
 			
-
+			
 			<a href="">   Email   </a>
 			<span>•</span>
 			<a href="">   Linkedin   </a>
@@ -163,7 +192,7 @@
 		</div>
 		
 		
-
+		
 	</section>
 </body>
 </html>

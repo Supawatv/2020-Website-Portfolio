@@ -6,10 +6,21 @@ overlay = false;
 $(document).ready(function() {
 	// Hide overlay
 	document.getElementById("overlay").style.display = "none"
+	document.getElementById("gallery").style.display = "none"
+	// document.getElementById("nav_bar").style.display = "none"
 	console.log("ready!");
+	console.log("fading")
+
+	// $('#nav_bar').fadeIn("slow");
+	$('#gallery').fadeIn("slow");
+
+
+
 	$('#hamburger').on('click', function() {
 		$('#overlay').fadeToggle();
 	});
+
+
 });
 
 // When burger is clicked toggle overlay and scroll
@@ -81,10 +92,3 @@ function includeHTML() {
 		}
 	}
 }
-
-
-// Type JS
-
-
-
-// Generate Grid
