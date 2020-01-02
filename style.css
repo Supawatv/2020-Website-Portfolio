@@ -1,12 +1,12 @@
 /* General */
 a {
   color: black;
-  transition: 1s;
+  transition: .25s;
 }
 
 body {
-  font-family: "Open Sans"
-  color:#000000;
+  font-family: "Open Sans";
+  color: #262626;
   margin: 0%;
   margin-bottom: 5%;
 }
@@ -126,6 +126,7 @@ p {
 
 #splash a:hover {
   text-decoration: underline;
+  color: #f05323;
 }
 
 #down_arrow {
@@ -166,21 +167,21 @@ nav {
 }
 
 .gallery-item img {
+  width: 80vw;
+  height: auto;
   background-color: lightgray;
   margin-bottom: 5%;
 }
 
 
 .gallery-info * {
-  margin-left: 10%;
-  margin-right: 10%;
   margin-top: 0%;
   margin-bottom: 0%;
 }
 
 /* Footer */
 #footer {
-  margin: 10%;
+  margin: 5%;
   opacity: .75;
   text-align: center;
   margin-bottom: 0%;
@@ -441,14 +442,15 @@ nav {
     margin-bottom: 2.5vh;
   }
 
+
 .gallery-item img{
   opacity:1;
   transition: .5s;
-
 }
 
 .gallery-item img:hover{
-  opacity: .66;
+  opacity: .75;
+
 }
 
 
