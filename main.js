@@ -1,3 +1,5 @@
+// Main JS common for all Page
+
 // Hamburger Animation
 // Global for overlay state
 overlay = false;
@@ -6,13 +8,7 @@ overlay = false;
 $(document).ready(function() {
 	// Hide overlay
 	document.getElementById("overlay").style.display = "none"
-	document.getElementById("gallery").style.display = "none"
-	// document.getElementById("nav_bar").style.display = "none"
 	console.log("ready!");
-	console.log("fading")
-
-	// Fade in gallery
-	$('#gallery').fadeIn("slow");
 
 	// Hamburger Click
 	$('#hamburger').on('click', function() {
@@ -55,7 +51,6 @@ function enable_scroll() {
 	});
 }
 
-
 // Include HTML
 function includeHTML() {
 	console.log("including HTML")
@@ -89,16 +84,3 @@ function includeHTML() {
 		}
 	}
 }
-
-// Hover States
-$(document).ready(function() {
-	// HCI explanation
-	$("#HCI").mouseenter(function() {
-		$("#HCI").text("Human-computer interaction")
-	});
-	$("#HCI").mouseleave(function() {
-		$("#HCI").text("HCI")
-	});
-
-
-});

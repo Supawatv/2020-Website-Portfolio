@@ -30,10 +30,11 @@
 		
 		<!-- Javascript -->
 		<script src="main.js"></script>
+		<script src="home_page.js"></script>
 	</head>
 	
 	
-	<body>
+	<body onload="init()">
 		<!-- Mobile Format -->
 		<meta name='viewport'
 		content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
@@ -46,10 +47,6 @@
 			<a href="">About</a>
 			<a href="">Resume</a>
 		</div>
-
-
-		
-		
 		<!-- Nav Bar -->
 		<nav>
 			<!-- Home Logo -->
@@ -75,7 +72,6 @@
 				<a href=""><h5>About</h5></a>
 				<a href=""><h5>Resume</h5></a>
 			</div>
-			
 		</nav>
 		
 		
@@ -169,38 +165,8 @@
 		
 		
 	</section>
+	
 	<!-- Footer -->
-	<section id="footer">
-		
-		<div id="footer_desktop">
-			<span>|</span>
-			<span> Designed and coded by Supawat Vitoorapakorn </span>
-			<span>|</span>
-			<a href="">   Email   </a>
-			<span>•</span>
-			<a href="">   Linkedin   </a>
-			<span>•</span>
-			<a href="">   Meduim   </a>
-			<span>•</span>
-			<a href="">   Behance   </a>
-		</div>
-		
-		<div id="footer_mobile">
-			
-			<h5> Designed and developed by<br>© Supawat Vitoorapakorn</h5>
-			
-			
-			<a href="">   Email   </a>
-			<span>•</span>
-			<a href="">   Linkedin   </a>
-			<span>•</span>
-			<a href="">   Meduim   </a>
-			<span>•</span>
-			<a href="">   Behance   </a>
-		</div>
-		
-		
-		
-	</section>
+	<div w3-include-html="../footer.html"></div>
 </body>
 </html>
