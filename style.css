@@ -71,9 +71,9 @@ p {
   height: 100%;
   background-color: white;
   flex-flow: column;
-  padding-top: 25vh;
   z-index: 100;  /* opacity: 0 */
   align-items: center;
+  justify-content: center;
 }
 
 #nav_links {
@@ -171,7 +171,7 @@ nav {
   height: 80vw;
   height: auto;
   background-color: lightgray;
-  margin-bottom: 5%;
+  margin-bottom: 2.5%;
 }
 
 
