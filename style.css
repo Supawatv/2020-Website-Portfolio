@@ -4,6 +4,8 @@ a {
   transition: .25s;
 }
 
+
+
 body {
   font-family: "Open Sans";
   color: #262626;
@@ -15,8 +17,12 @@ h1 {
   font-family: Lora;
   font-style: normal;
   font-weight: normal;
-  font-size: 29px;
-  line-height: 37px;
+  font-size: 33px;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.content h1{
 }
 
 h2 {
@@ -27,21 +33,8 @@ h2 {
   line-height: 27px;
 }
 
-h3 {
-  font-family: Lora;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 26px;
-}
 
-h4 {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  color: #262626;
-}
+
 
 h5 {
   font-family: Open Sans;
@@ -54,11 +47,11 @@ h5 {
 }
 
 p {
-  font-family: Open Sans;
+  font-family: Lora;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 1.7;
   color: #262626;
 }
 
@@ -101,13 +94,6 @@ p {
   margin-top: 10vh;
 }
 
-#splash_type {
-  font-family: Lora;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 29px;
-  line-height: 37px;
-}
 
 #splash h1 {
   font-family: Lora;
@@ -156,14 +142,15 @@ nav {
 }
 
 /* Gallery Section */
-#gallery {
+.gallery {
   display: flex;
   flex-flow: column;
   align-items: center;
 }
 
-.gallery-item {
-  margin-bottom: 20%;
+.gallery *{
+  width: 100vw;
+  margin-bottom: 2vw;
 }
 
 .gallery-item a {
@@ -221,9 +208,22 @@ nav {
 }
 
 /* Project */
+
+.content{
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+}
+
+  .content .brief_title {
+    margin-top: 0%;
+    margin-bottom:  0;
+  }
+
+
+
 .banner {
   display: flex;
-  background-color: black;
+  /* background-color: black; */
   align-items: center;
   justify-content: center;
   flex-flow: column;
@@ -232,19 +232,15 @@ nav {
   margin-bottom: 7.5vh;
   padding-left: 10vw;
   padding-right: 10vw;
+  
 }
 
 .hero .banner {
   margin: 0%;
 }
 
-.banner h1 {
-  color: white;
-  font-family: Lora;
+.banner * {
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 24px;
   text-align: center;
 }
 
@@ -268,7 +264,8 @@ nav {
 }
 
 .summary * {
-  margin-right: 20px
+  margin-right: 20px;
+  
 }
 
 /* All text is margin */
@@ -300,6 +297,7 @@ nav {
   background-color: lightgray;
   width: 80vw;
   margin-left: 10vw;
+  margin-left: 10vw;
 }
 
 .caption {
@@ -312,22 +310,6 @@ nav {
   text-align: center;
 }
 
-.col2 {
-  display: flex;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  justify-content: space-evenly;
-  margin-bottom: 2vh;
-}
-
-.col2 img {
-  width: 40vw;
-  height: auto;
-  object-fit: contain;
-}
-
-
 
 /* Filter */
 #filter {
@@ -336,12 +318,10 @@ nav {
   display: none;
 }
 
-
 .button_container {
   display: flex;
   align-items: center;
 }
-
 
 .button_container * {
   margin-right: 2vw;
@@ -365,35 +345,22 @@ nav {
   transition: .25s;
 }
 
-.button:hover{
+.button:hover {
   opacity: 1;
 }
-
-
 
 .button a {
   text-align: center;
 }
 
-
-#filter h1,{
+#filter h1 {
   margin-bottom: 0%;
   margin-top: 0%;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* For Desktop and Tablet */
 @media (min-width:801px) {
-  #splash{
+  #splash {
     margin-bottom: 7.5%;
   }
 
@@ -407,37 +374,25 @@ nav {
     padding-right: 0%;
   }
 
-  .content {
-    display: flex;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+  .content{
+    padding-left: 20vw;
+    padding-right: 20vw;
   }
 
-  .col_1 {
-    min-width: 15vw;
-    margin-right: 2.5vw;
-  }
 
-  .col_1 h1 {
-    margin-top: 0%;
-  }
-
-  .col_2 {
-
-    /* background-color: lightskyblue; */
-    max-width: 80vw;
-  }
-
-  .col_2 img {
+  .normal_img{
     margin-left: 0%;
-    max-width: 65vw;
+    margin-right: 0%;
+    width: 60vw;
   }
+
+
 
   /* Project Brief */
   .brief {
     display: flex;    /* background-color: lightskyblue; */
+        padding-left: 20vw;
+    padding-right: 20vw;
   }
 
   .col_3 {
@@ -445,22 +400,27 @@ nav {
   }
 
   .summary {
-
     /* background-color: lightpink; */
     flex-flow: column;
-    margin-left: 10%;
+    margin-left: 5vw;
     text-align: left;
-    min-width: 20vw;
+    min-width: 15vw;
+    margin-right: 0%;
+    /* background-color: red; */
+
   }
 
   .summary * {
-
     /* background-color: gray; */
     align-self: flex-start;
   }
 
+  .summary p{
+    margin-right: 0%;
+  }
+
   /* Gallery */
-  #gallery {
+  .gallery {
     display: flex;
     flex-flow: row;
     padding: 10%;
@@ -521,6 +481,7 @@ nav {
   .gallery-item img {
     opacity: 1;
     transition: .5s;
+    margin-bottom: 0%
   }
 
   .gallery-item img:hover {
@@ -530,5 +491,14 @@ nav {
   .gallery-info * {
     text-align: left;
   }
+
+  .gallery *{
+  width: 38vw;
+}
+
+.gallery img{
+  margin-bottom: .5vw;
+  margin-top: .5vw;
+}
 
 }
